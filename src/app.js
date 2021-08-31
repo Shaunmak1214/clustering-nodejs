@@ -26,6 +26,20 @@ module.exports.clusterApp = () => {
   // Index route
   app.get('/', (req, res) => res.send('Hello World!'));
 
+  // slow Api
+  app.get('/api/slow', function (req, res) {
+    console.time('slowApi');
+    const baseNumber = 7;
+    let result = 0;   
+    for (let i = Math.pow(baseNumber, 7); i >= 0; i--) {      
+      result += Math.atan(i) * Math.tan(i);
+    };
+    console.timeEnd('slowApi');
+  
+    console.log(`Result number is ${result} - on process ${process.pid}`);
+    res.send(`Result number is ${result}`);
+  });
+
   const PORT = process.env.PORT || 8000;
 
   app.listen(PORT, console.log(`Server started on port ${PORT}`));
