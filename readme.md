@@ -14,14 +14,10 @@
   <a href="#">English</a>
 </p>
 
----
-
 ## Table of Contents
 
 - Quick start
   - [Install](#install)
-
----
 
 ## Examples
 <p>Lets look at some exmaples 🔥</p>
@@ -32,8 +28,6 @@
     <td valign="top"><p style="font-size: 15px;">No Cluster</p><img src="https://res.cloudinary.com/shaun-storage/image/upload/v1630431472/withCluster.jpg"/></td>
   </tr>
 </table>
-
----
 
 ## Install
 
@@ -50,8 +44,6 @@ $ npm i
 With cluster  ```$ npm run withCluster ```
 No cluster ``` $ npm run noCluster```
 _Note: To run the preceding commands, [Node.js](http://nodejs.org) and [npm](https://npmjs.com) must be installed._
-
----
 
 ## License
 
