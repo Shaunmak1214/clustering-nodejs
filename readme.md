@@ -16,8 +16,10 @@
 
 ## Table of Contents
 
-- Quick start
+- Cluster Node js
+  - [Example](#examples)
   - [Install](#install)
+  - [License](#license)
 
 ## Examples
 <p>Lets look at some exmaples 🔥</p>
